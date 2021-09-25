@@ -1,0 +1,264 @@
+.footer {
+  background: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+  display: block;
+  @media screen and (min-width: 768px) {
+    padding-top: 65px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    align-items: center;
+  }
+}
+.footer__div {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  text-align: center;
+}
+.footer-left {
+  @media screen and (min-width: 768px) {
+    margin-left: 91px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer__logo-two {
+  color: var(--main-title-color);
+}
+.footer-nav {
+  @media screen and (max-width: 767px) {
+    margin: 20px 0 60px 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 20px 0 0 0;
+  }
+}
+.footer-item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.footer__address {
+  font-style: normal;
+  @include font(500, 14px, 1.71);
+  // font-weight: normal;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.footer__mail-tel {
+  font-style: normal;
+  @include font(500, 14px, 1.71);
+  // font-weight: normal;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+// футер середній!!!!!!!!!
+.footer-medium {
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+.footer-medium__title {
+  font-style: normal;
+  @include font(700, 14px, 1.14);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 20px;
+}
+.footer__list-box {
+  display: flex;
+  display: inline-flex;
+  margin-bottom: 60px;
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+.foter__icon-item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-left-medium {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+// футер правий1!!!!!!!!
+
+.footer-right {
+  @media screen and(min-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-left: 93px;
+    text-align: start;
+    flex: none;
+    // display: flex;
+    // place-items: flex-start;
+  }
+}
+.footer-right__title {
+  display: block;
+
+  // font-family: Roboto;
+  font-style: normal;
+  @include font(700, 14px, 1.14);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-title-color);
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-form {
+  @media screen and(max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 0px;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+  }
+}
+.footer-right__input {
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
+  &::placeholder {
+    font-style: normal;
+    @include font(500, 16px, 1.25);
+    // font-weight: normal;
+    // font-size: 16px;
+    // line-height: 1.25;
+    // letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+  }
+
+  &:focus::placeholder {
+    color: #ffffff;
+  }
+  &:focus {
+    color: #ffffff;
+  }
+  &:invalid {
+    color: #ffffff;
+  }
+}
+
+.footer-right__btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  @include font(700, 16px, 1.87);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.87;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+.footer-right__btn-icon {
+  margin-left: 10px;
+  background-position: center;
+  background: repeat;
+
+  vertical-align: middle;
+}
