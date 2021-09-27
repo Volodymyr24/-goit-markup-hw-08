@@ -100,7 +100,7 @@
   height: 15px;
   border: 2px solid #000000;
   border-radius: 2px;
-  margin-right: 5px;
+  // margin-right: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,12 +115,16 @@
 .checkbox-text {
   margin-left: 8px;
   font-style: normal;
-  @include font(500, 14px, 1.71);
+  @include font(500, 12px, 1.16);
   // font-weight: 500;
   // font-size: 14px;
   // line-height: 1.71;
   // letter-spacing: 0.03em;
   color: var(--main-text-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font(500, 14px, 1.71);
+  }
 }
 
 .checkbox-link {
