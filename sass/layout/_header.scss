@@ -12,7 +12,7 @@
 
   @media screen and(min-width: 1200px) {
     padding-top: 25px;
-    padding-bottom: 25px;
+    // padding-bottom: 25px;
   }
 }
 .header__div {
@@ -327,7 +327,15 @@
       background-color: var(--accent-color);
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    &::after {
+      margin-top: 31.5px;
+      margin-bottom: -31.5px;
+    }
+  }
 }
+
 .header-line-port {
   @media screen and (min-width: 768px) {
     &::after {
@@ -340,6 +348,12 @@
       border-radius: 2px;
 
       background-color: var(--accent-color);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &::after {
+      margin-top: 31.5px;
+      margin-bottom: -31.5px;
     }
   }
 }
