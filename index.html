@@ -38,7 +38,7 @@
             </svg>
         
         </button>
-        <div class="menu-container is-hidden container" data-menu>
+        <div class="menu-container is-hidden" data-menu>
             
                 <button type="button" class="menu-button-close" data-menu-close>
                         
@@ -65,7 +65,7 @@
               
                 
                 
-           
+           <div class="menu-nav-box">
             <ul class="header-nav list">
                 <li class="header-nav__item">
                     <a class="header-nav__maill link" href="info@devstudio.com">
@@ -105,13 +105,13 @@
                 </ul>
 
             </div>
-
+        </div>
             </div>
             </nav>
-            </header>
-        </div>
 
- 
+         </div>
+ </header>
+        
 
  
 <main>
@@ -213,7 +213,15 @@
 <ul class="team__list list">
     <li class="team-item">
     <div class="team__box">
-        <img src="./img/img1.jpg" alt="Ігор" width="270">
+     <picture>
+        <source srcset="./img/team/img-team-deck-1.jpg 1x, ./img/team/img-team-deck-1-x2.jpg 2x" 
+        media="(min-width: 1200px)">
+        <source srcset="./img/team/img-team-tab-1.jpg x1, ./img/team/img-team-tab-1-x2.jpg 2x"
+        media="(min-width: 768px)">
+        <source srcset="./img/team/img-team-tel-1.jpg x1, ./img/team/img-team-tel-1-x2.jpg 2x"
+        media="(min-width: 320px)">
+     </picture>
+        <img src="./img/img1.jpg" alt="Ігор">
     <div class="team__text-p">
         <h3 class="team__text link">Игорь Демьяненко</h3>
         <p class="team__text-work link">Product Designer</p>
@@ -260,7 +268,16 @@
 
     <li class="team-item">
         <div class="team__box">
-            <img src="./img/img2.jpg" alt="Ольга" width="270">
+        <picture>
+            <source srcset="./img/team/img-team-deck-2.jpg 1x, ./img/team/img-team-deck-2-x2.jpg 2x"
+                media="(min-width: 1200px)">
+            <source srcset="./img/team/img-team-tab-2.jpg x1, ./img/team/img-team-tab-2-x2.jpg 2x"
+             media="(min-width: 768px)">
+            <source srcset="./img/team/img-team-tel-2.jpg x1, ./img/team/img-team-tel-2-x2.jpg 2x"
+             media="(min-width: 320px)">
+        </picture>
+
+            <img src="./img/img2.jpg" alt="Ольга">
         <div class="team__text-p">
             <h3 class="team__text link">Ольга Репина</h3>
             <p class="team__text-work link">Frontend Developer</p>
@@ -306,7 +323,16 @@
 
     <li class="team-item">
         <div class="team__box">
-            <img src="./img/img3.jpg" alt="Микола" width="270">
+    <picture>
+            <source srcset="./img/team/img-team-deck-3.jpg 1x, ./img/team/img-team-deck-3-x2.jpg 2x" 
+            media="(min-width: 1200px)">
+            <source srcset="./img/team/img-team-tab-3.jpg x1, ./img/team/img-team-tab-3-x2.jpg 2x"
+            media="(min-width: 768px)">
+            <source srcset="./img/team/img-team-tel-3.jpg x1, ./img/team/img-team-tel-3-x2.jpg 2x"
+            media="(min-width: 320px)">
+        </picture>
+            
+            <img src="./img/img3.jpg" alt="Микола">
         <div class="team__text-p">
             <h3 class="team__text link">Николай Тарасов</h3>
             <p class="team__text-work link">Marketing</p>
@@ -351,7 +377,16 @@
     </li>
     <li class="team-item">
     <div class="team__box">
-        <img src="./img/img4.jpg" alt="Міша" width="270">
+
+        <picture>
+            <source srcset="./img/team/img-team-deck-4.jpg 1x, ./img/team/img-team-deck-4-x2.jpg 2x"
+                media="(min-width: 1200px)">
+            <source srcset="./img/team/img-team-tab-4.jpg x1, ./img/team/img-team-tab-4-x2.jpg 2x"
+             media="(min-width: 768px)">
+            <source srcset="./img/team/img-team-tel-4.jpg x1, ./img/team/img-team-tel-4-x2.jpg 2x"
+             media="(min-width: 320px)">
+        </picture>
+        <img src="./img/img4.jpg" alt="Міша">
     <div class="team__text-p">
         <h3 class="team__text link">Михаил Ермаков</h3>
         <p class="team__text-work link">UI Designer</p>
