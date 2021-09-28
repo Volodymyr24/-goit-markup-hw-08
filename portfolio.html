@@ -145,7 +145,25 @@
         class="card-set list ">
         <li class="card-item">
                 <div class="card-overlay">
-                    <img src="./img/project1.jpg" alt="Ноутбук" width="370" height="294">
+               <picture>
+
+                <source src="./img/port-desc-1-min.jpg x1,
+                            ./img/port-desc-1-x2-min.jpg x2"
+                        
+                        media="(min-width: 1200px)" />
+                
+                <source src="./img/port-tab-1-min.jpg x1,
+                             ./img/port-tab-1-min.jpg x2"
+                            media="(min-width: 768px)" />
+
+                <source src="./img/port-tel-1-min.jpg x1,
+                             ./img/port-tel-1-min.jpg x2"
+                                media="(min-width: 320px)" />
+               
+                    <img src="./img/project1.jpg" alt="Ноутбук">
+
+                    </picture>
+
                     <p class="card-text-top">
                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
@@ -159,6 +177,15 @@
     
         <li class="card-item">
             <div class="card-overlay">
+
+                <picture>
+                    <source srcset="./img/imgcard/img-port-desc-2-min.jpg 1x, ./img/imgcard/img-port-desc-2-x2-min.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./img/imgcard/img-port-tab-2-min.jpg x1, ./img/imgcard/img-port-tab-2-x2-min.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source srcset="./img/imgcard/img-port-tel-2-min.jpg x1, ./img/imgcard/img-port-tel-2-x2-min.jpg 2x"
+                        media="(min-width: 320px)">
+                </picture>
             <img src="./img/project2.jpg" alt="Постер Новий Орлеан" width="370" height="294">
                 <p class="card-text-top">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
