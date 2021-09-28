@@ -209,6 +209,10 @@
       pointer-events: none;
     }
   }
+
+  @media screen and(min-width:1200px) {
+    display: contents;
+  }
 }
 
 .menu-button-close {
@@ -438,6 +442,8 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
+    width: 16px;
+    height: 12px;
   }
 }
 
@@ -486,6 +492,9 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
+
+    width: 10px;
+    height: 16px;
   }
 }
 
