@@ -1563,6 +1563,7 @@ img {
   max-width: 528px;
   max-height: 609px;
   background-color: #ffffff;
+  margin-top: 90px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -1579,9 +1580,16 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .modal-hero {
+    margin-top: 200px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-hero {
     height: 581px;
+    margin-top: 195px;
   }
 }
 
