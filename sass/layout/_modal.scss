@@ -5,6 +5,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
   transition: opacity 250ms, visibility 250ms;
+
+  overflow-y: scroll;
 }
 
 .modal-hero {
