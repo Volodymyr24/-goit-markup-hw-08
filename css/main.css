@@ -547,6 +547,13 @@ img {
   background-position: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/img-header-mob-x2.jpg);
@@ -719,6 +726,12 @@ img {
   color: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .about__title {
+    text-align: left;
+  }
+}
+
 .about-title {
   margin: 0 0 10px 0;
 }
@@ -798,6 +811,13 @@ img {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .team__title {
   text-align: center;
   margin-bottom: 60px;
@@ -819,6 +839,10 @@ img {
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1073,6 +1097,7 @@ img {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
   }
 }
 
@@ -1129,6 +1154,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-medium {
     margin-left: 70px;
+    text-align: left;
   }
 }
 
@@ -1322,8 +1348,22 @@ img {
 }
 
 .section-portfolio {
-  padding-top: 95px;
-  padding-bottom: 105px;
+  padding-top: 60px;
+  padding-bottom: 170px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button-portfolio {
