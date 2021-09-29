@@ -1582,6 +1582,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal-hero {
     height: 581px;
+    width: 528px;
   }
 }
 
